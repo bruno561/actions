@@ -1,0 +1,14 @@
+/build/
+node_modules
+.vscode
+.idea
+.DS_Store
+
+/coverage/
+/certs/**
+private.crt
+private.csr
+private.key
+ssl.conf
+/.certs/**
+*.log

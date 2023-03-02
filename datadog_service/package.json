@@ -1,0 +1,19 @@
+{
+  "name": "datadog_service",
+  "version": "1.0.0",
+  "description": "GH Action to send service definitions to DataDog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "axios": "^0.27.2",
+    "js-yaml": "^4.1.0",
+    "moment": "^2.29.4"
+  }
+}

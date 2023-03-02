@@ -1,0 +1,14 @@
+{
+    "selected_tests":[],
+    "create_new_account":true,
+    "account_info_overrides":{
+       "account_type":"Individual",
+       "identity":{},
+       "suitability":{},
+       "joint":{}
+    },
+    "dynamic_params":{
+       "test_mode":"smoke"
+    },
+    "title":"Smoke"
+}

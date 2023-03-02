@@ -1,0 +1,15 @@
+name: Datadog Service Definition
+description: GH Action to send service definitions to Datadog
+inputs:
+  spec_file:
+    description: Path of spec file
+    required: true
+  dd_api_key:
+    description: 'Datadog API Key'
+    required: true
+  dd_application_key:
+    description: 'Datadog Application Key'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

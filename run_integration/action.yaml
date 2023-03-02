@@ -1,0 +1,30 @@
+name: Run Integration
+description: Starts a new integration tests
+inputs:
+  selected_tests:
+    required: false
+    default: '[]'
+    description: selected tests
+  env:
+    required: true
+    description: env name
+  branch:
+    required: true
+    description: branch name
+  hash:
+    required: true
+    description: commit hash
+  repository:
+    required: true
+    description: repository name
+  pull_request:
+    required: false
+    default: 0
+    description: pull request number
+  test_mode:
+    required: false
+    default: 'smoke'
+    description: test mode smoke or matrix
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

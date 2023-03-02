@@ -1,0 +1,22 @@
+name: OpsLevel Report
+description: Report deployment to OpsLevel
+inputs:
+  integration_url:
+    description: 'The OpsLevel deploy integration url'
+    required: true
+    default: ''
+  services:
+    description: 'The services alias for the event'
+    required: false
+    default: ''
+  description:
+    description: 'The description or release notes for the event'
+    required: false
+    default: ''
+  environment:
+    description: 'The environment for the event'
+    required: false
+    default: ''
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
